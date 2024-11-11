@@ -44,7 +44,7 @@ listing:
 share:
   permalink: "https://github.com/arpita2512"
   description: "AI-Medical CDT Conference 2025"
-  stumble: true
+  button: true
   linkedin: true
   twitter: true
   facebook: true

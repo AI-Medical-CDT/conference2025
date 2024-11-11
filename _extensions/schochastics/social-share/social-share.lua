@@ -25,9 +25,9 @@ function Meta(m)
     else
         post_title = pandoc.utils.stringify(m.title)
     end
-    if m.share.stumble then
+    if m.share.button then
         share_text = share_text ..
-            '<a href="https://github.com/arpita2512">Register</a>'
+            '<a href="https://github.com/arpita2512"><div style="font-size:20px; font-weight: bold">Register</div></a>'
     end
     if m.share.twitter then
         share_text = share_text ..

@@ -9,7 +9,7 @@ Website for the UKRI AI-Medical CDT Conference 2025
 - [Jost Font](https://fonts.google.com/specimen/Jost)
 - Extensions:
     - [fontawesome](https://github.com/quarto-ext/fontawesome)
-    - [quarto-social-share](https://github.com/schochastics/quarto-social-share)
+    - [quarto-social-share](https://github.com/schochastics/quarto-social-share) - modified to include a registration button
 
 ## Acknowledgements
 
