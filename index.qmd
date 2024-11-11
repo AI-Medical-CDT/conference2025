@@ -3,9 +3,6 @@ title: "UKRI Centre for Doctoral Training in<br>AI for Medical Diagnosis and Car
 subtitle: "{{< fa solid calendar-days >}}<b> Wednesday, 18 June 2025<br> {{< fa location-dot >}} Nexus, Leeds</b>"
 pagetitle: "AI-Medical CDT Conference 2025"
 
-filters:
-  - social-share
-
 title-block-banner: "#00000000"
 title-block-banner-color: "#000000"
 title-block-style: default
@@ -40,19 +37,9 @@ listing:
   - id: students
     template: assets/styles/organisers_grid.ejs
     contents: students.yml
-
-share:
-  permalink: "https://github.com/arpita2512"
-  description: "AI-Medical CDT Conference 2025"
-  button: true
-  linkedin: true
-  twitter: true
-  facebook: true
-  instagram: true
-  email: true
-  location: "before-body"
-  divclass: left
 ---
+
+[Register](https://github.com/arpita2512/conference2025){.btn .btn-primary .btn-lg .btn role="button" data-toggle="tooltip" title="Registration Form"}
 
 # About {#sec-about}
 
@@ -65,7 +52,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 :::{#keynotes}
 :::
 
-# Schedule {#sec-schedule}
+# Agenda {#sec-agenda}
 
 <div style="text-align: justify">
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.

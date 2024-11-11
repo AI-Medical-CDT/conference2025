@@ -24,6 +24,12 @@ $link-color: #DE3163;
 $navbar-bg: $body-bg;
 $navbar-fg: $body-color;
 
+.btn {
+  padding: 0.5em 0.5em;
+  border-radius: 25px;
+  margin: 0;
+}
+
 .navbar {
   font-family: $navbar-font-family;
 }

@@ -11,8 +11,8 @@ website:
         text: About
       - href: index.qmd#sec-keynotes
         text: Keynotes
-      - href: index.qmd#sec-schedule
-        text: Schedule
+      - href: index.qmd#sec-agenda
+        text: Agenda
       - href: index.qmd#sec-venue
         text: Venue
       - href: index.qmd#sec-organisers
