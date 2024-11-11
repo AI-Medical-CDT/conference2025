@@ -9,7 +9,6 @@ filters:
 title-block-banner: "#00000000"
 title-block-banner-color: "#000000"
 title-block-style: default
-#include-before-body: button.html
 include-in-header:
   - text: |
       <style>
