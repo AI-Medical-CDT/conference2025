@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "CDT Conference"
+  navbar:
+    title: Conference 2025<span class='icon-line'></span>
+    right:
+      - href: index.qmd#sec-about
+        text: About
+      - href: index.qmd#sec-keynotes
+        text: Keynotes
+      - href: index.qmd#sec-schedule
+        text: Schedule
+      - href: index.qmd#sec-venue
+        text: Venue
+      - href: index.qmd#sec-organisers
+        text: Organisers
+  page-footer:  
+    left: >-
+     Made with {{< fa heart >}} and [Quarto](https://quarto.org)
+    center: |
+      <a class="cdt-link" href="https://ai-medical.leeds.ac.uk/" title="CDT Website" target="_blank" rel="noopener">{{< fa globe size=xl >}}</a>
+      <a class="cdt-link" href="https://x.com/LeedsMedAI_CDT" title="CDT Twitter" target="_blank" rel="noopener">{{< fa brands twitter size=xl >}}</a>
+      <a class="cdt-link" href="https://leeds-ai-cdt.github.io/" title="CDT Blog" target="_blank" rel="noopener">{{< fa blog size=xl >}}</a>
+  back-to-top-navigation: true
+
+format:
+  html:
+    toc: false
+    theme: 
+      light: [cosmo, assets/styles/light_theme.scss]
+      dark: [cosmo, assets/styles/dark_theme.scss]
+    css: assets/styles/styles.css
+    smooth-scroll: true
+    code-link: true
+    pagetitle: "{{< meta title >}}"
+    lightbox: true

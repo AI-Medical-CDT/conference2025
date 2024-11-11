@@ -1,0 +1,12 @@
+- name: Professor David Hogg
+  role: "Professor of Artificial Intelligence and CDT Director"
+  image: assets/imgs/david.jpg
+  href: https://eps.leeds.ac.uk/computing/staff/84/professor-david-hogg
+- name: Professor Vania Dimitrova
+  role: "Professor of Human-Centred AI and CDT Co-director"
+  image: assets/imgs/Vania.jpg
+  href: https://eps.leeds.ac.uk/computing/staff/184/professor-vania-dimitrova
+- name: Mr Owen Johnson
+  role: "Associate Professor and CDT Co-director"
+  image: assets/imgs/owen.jpg
+  href: https://eps.leeds.ac.uk/computing/staff/259/owen-johnson

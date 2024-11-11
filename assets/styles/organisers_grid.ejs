@@ -1,0 +1,15 @@
+```{=html}
+<div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+<% for (const item of items) { %>
+    <div class="text-center">
+        <% if (item.href) { %>
+            <a href="<%- item.href %>" class="listing-title"><img class="rounded-circle img-fluid" src="<%- item.image %>" style="max-width: 200px"></a>
+        <% } else { %>
+            <img class="rounded-circle img-fluid" src="<%- item.image %>" style="max-width: 200px">
+        <% } %>
+        <p class="fs-4 mt-2 mb-0"><%- item.name %></p>
+        <p class="mb-0"><%- item.role %></p>
+    </div>
+<% } %>
+</div>
+```

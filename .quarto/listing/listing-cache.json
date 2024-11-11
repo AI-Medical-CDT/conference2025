@@ -1,0 +1,11 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "keynotes.yml",
+      "organisers.yml",
+      "directors.yml",
+      "staff.yml",
+      "students.yml"
+    ]
+  }
+}
