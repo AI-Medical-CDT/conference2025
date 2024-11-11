@@ -30,6 +30,18 @@ $navbar-fg: $body-color;
   margin: 0;
 }
 
+/*
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+  background-color: #6c757d !important;
+  color: #ffffff !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #DE3163 !important;
+  color: #ffffff !important;
+}
+*/
+
 .navbar {
   font-family: $navbar-font-family;
 }

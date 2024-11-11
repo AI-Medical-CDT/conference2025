@@ -23,6 +23,7 @@ include-in-header:
         height: 400px;
       }
       </style>
+      <script type="module" src="share-button.js"></script>
 
 listing: 
   - id: keynotes
@@ -39,7 +40,13 @@ listing:
     contents: students.yml
 ---
 
+::: {layout="[1,1,1,1,1,1,1]" layout-valign="bottom"}
 [Register](https://github.com/arpita2512/conference2025){.btn .btn-primary .btn-lg .btn role="button" data-toggle="tooltip" title="Registration Form"}
+
+<share-button>
+  <button type="button" class="btn btn-primary btn-lg">Share</button>
+</share-button>
+:::
 
 # About {#sec-about}
 
