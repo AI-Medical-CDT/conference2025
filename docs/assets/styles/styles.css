@@ -16,3 +16,8 @@
 .subtitle {
   font-weight: 500;
 }
+
+
+.button-container {
+  display: flex;
+}

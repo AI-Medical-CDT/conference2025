@@ -40,13 +40,12 @@ listing:
     contents: students.yml
 ---
 
-::: {layout="[1,1,1,1,1,1,1]" layout-valign="bottom"}
-[Register](https://github.com/arpita2512/conference2025){.btn .btn-primary .btn-lg .btn role="button" data-toggle="tooltip" title="Registration Form"}
-
-<share-button>
-  <button type="button" class="btn btn-primary btn-lg">Share</button>
-</share-button>
-:::
+<div class="button-container">
+  <a href="https://github.com/arpita2512/conference2025" class="btn btn-primary btn-lg" role="button" style='margin-right:10px'>Register</a>
+  <share-button>
+  <button type="button" class="btn btn-primary btn-lg"><i class="fa-regular fa-share-from-square"></i></button>
+  </share-button>
+</div>
 
 # About {#sec-about}
 
