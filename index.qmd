@@ -29,15 +29,15 @@ listing:
   - id: keynotes
     template: assets/styles/keynotes_grid.ejs
     contents: keynotes.yml
-  - id: directors
+  - id: exec
     template: assets/styles/organisers_grid.ejs
-    contents: directors.yml
-  - id: staff
-    template: assets/styles/organisers_grid.ejs
-    contents: staff.yml
+    contents: exec.yml
   - id: students
     template: assets/styles/organisers_grid.ejs
     contents: students.yml
+
+execute: 
+  echo: false
 ---
 
 <div class="button-container">
@@ -66,23 +66,33 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 # Venue {#sec-venue}
 
-<div style="text-align: justify">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
+```{r warning=FALSE, message=FALSE, echo=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(dplyr,warn.conflicts = FALSE)
+library(leaflet,warn.conflicts = FALSE)
+library(htmltools,warn.conflicts = FALSE)
+
+content <- paste(sep = "<br/>",
+  "<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0'>Nexus, Leeds</a></b>",
+  "Discovery Way",
+  "University of Leeds",
+  "Leeds, LS2 3AA"
+)
+
+leaflet() %>% addTiles() %>%
+  addPopups(lng=-1.550028, lat=53.805251, content,
+    options = popupOptions(closeButton = FALSE)
+  )
+```
 
 # Organisers {#sec-organisers}
 
-## CDT Management
-
-:::{#directors}
-:::
-
-## CDT Staff
-
-:::{#staff}
-:::
-
-## Student Volunteers
+## Student Organising Committee
 
 :::{#students}
+:::
+
+## CDT Executive Board
+
+:::{#exec}
 :::

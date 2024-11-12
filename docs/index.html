@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-directors .list');
+    const listingTargetEl = window.document.querySelector('#listing-exec .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -115,35 +115,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-directors'] = new List('listing-directors', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-staff .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-name','listing-role','listing-image',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-name","listing-role","listing-image"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-staff'] = new List('listing-staff', options);
+    window['quarto-listings']['listing-exec'] = new List('listing-exec', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -202,6 +174,15 @@ ul.task-list li input[type="checkbox"] {
 background: #00000000;
       }
 </style>
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
 <style>
 #title-block-header.quarto-title-block.default .quarto-title-meta {
   color: #ffffff;
@@ -262,6 +243,17 @@ background: #00000000;
     <a class="nav-link" href="./index.html#sec-organisers"> 
 <span class="menu-text">Organisers</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-past-editions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Past Editions</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-past-editions">    
+        <li>
+    <a class="dropdown-item" href="https://sites.google.com/view/leedsaimedicalcdtconference?usp=sharing" target="_blank">
+ <span class="dropdown-text">2024</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -339,15 +331,45 @@ No matching items
 </section>
 <section id="sec-venue" class="level1">
 <h1>Venue</h1>
-<div style="text-align: justify">
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-aa78c86a3129cdb3740f" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-aa78c86a3129cdb3740f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0'>Nexus, Leeds<\/a><\/b><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 </section>
 <section id="sec-organisers" class="level1">
 <h1>Organisers</h1>
-<section id="cdt-management" class="level2">
-<h2 class="anchored" data-anchor-id="cdt-management">CDT Management</h2>
-<div id="listing-directors" class="quarto-listing quarto-listing-container-custom">
+<section id="student-organising-committee" class="level2">
+<h2 class="anchored" data-anchor-id="student-organising-committee">Student Organising Committee</h2>
+<div id="listing-students" class="quarto-listing quarto-listing-container-custom">
+<div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+
+    <div class="text-center">
+        
+            <a href="https://ai-medical.leeds.ac.uk/profiles/sashi-mahapatra/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/sashi.png" style="max-width: 200px"></a>
+        
+        <p class="fs-4 mt-2 mb-0">Sashi Mahapatra</p>
+        <p class="mb-0">Role</p>
+    </div>
+
+    <div class="text-center">
+        
+            <a href="https://ai-medical.leeds.ac.uk/profiles/arpita-saggar/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/arpita.jpg" style="max-width: 200px"></a>
+        
+        <p class="fs-4 mt-2 mb-0">Arpita Saggar</p>
+        <p class="mb-0">Role</p>
+    </div>
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="cdt-executive-board" class="level2">
+<h2 class="anchored" data-anchor-id="cdt-executive-board">CDT Executive Board</h2>
+<div id="listing-exec" class="quarto-listing quarto-listing-container-custom">
 <div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
 
     <div class="text-center">
@@ -374,17 +396,6 @@ No matching items
         <p class="mb-0">Associate Professor and CDT Co-director</p>
     </div>
 
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="cdt-staff" class="level2">
-<h2 class="anchored" data-anchor-id="cdt-staff">CDT Staff</h2>
-<div id="listing-staff" class="quarto-listing quarto-listing-container-custom">
-<div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-
     <div class="text-center">
         
             <img class="rounded-circle img-fluid" src="assets/imgs/felicia.jpg" style="max-width: 200px">
@@ -399,33 +410,6 @@ No matching items
         
         <p class="fs-4 mt-2 mb-0">Miss Azema Maskeen</p>
         <p class="mb-0">Administrative Assistant</p>
-    </div>
-
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="student-volunteers" class="level2">
-<h2 class="anchored" data-anchor-id="student-volunteers">Student Volunteers</h2>
-<div id="listing-students" class="quarto-listing quarto-listing-container-custom">
-<div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-
-    <div class="text-center">
-        
-            <a href="https://ai-medical.leeds.ac.uk/profiles/sashi-mahapatra/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/blank_face.png" style="max-width: 200px"></a>
-        
-        <p class="fs-4 mt-2 mb-0">Sashi Mahapatra</p>
-        <p class="mb-0">Role</p>
-    </div>
-
-    <div class="text-center">
-        
-            <a href="https://ai-medical.leeds.ac.uk/profiles/arpita-saggar/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/arpita.jpg" style="max-width: 200px"></a>
-        
-        <p class="fs-4 mt-2 mb-0">Arpita Saggar</p>
-        <p class="mb-0">Role</p>
     </div>
 
 </div>

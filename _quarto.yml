@@ -17,6 +17,11 @@ website:
         text: Venue
       - href: index.qmd#sec-organisers
         text: Organisers
+      - text: Past Editions
+        menu:
+          - text: "2024"
+            href: https://sites.google.com/view/leedsaimedicalcdtconference?usp=sharing
+            target: _blank
   page-footer:  
     left: >-
      Made with {{< fa heart >}} and [Quarto](https://quarto.org)
