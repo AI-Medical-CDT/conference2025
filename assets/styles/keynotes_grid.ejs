@@ -2,7 +2,7 @@
 <div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
 <% for (const item of items) { %>
     <div class="text-center">
-        <a href="<%- item.href %>" class="listing-title"><img class="rounded-circle img-fluid" src="<%- item.image %>" style="max-width: 200px"></a>
+        <a href="<%- item.href %>" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="<%- item.image %>" style="max-width: 200px"></a>
         <p class="fs-4 mt-2 mb-0"><%- item.name %></p>
         <p class="mb-0"><%- item.affiliation %></p>
     </div>

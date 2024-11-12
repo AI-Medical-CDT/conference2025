@@ -3,7 +3,7 @@
 <% for (const item of items) { %>
     <div class="text-center">
         <% if (item.href) { %>
-            <a href="<%- item.href %>" class="listing-title"><img class="rounded-circle img-fluid" src="<%- item.image %>" style="max-width: 200px"></a>
+            <a href="<%- item.href %>" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="<%- item.image %>" style="max-width: 200px"></a>
         <% } else { %>
             <img class="rounded-circle img-fluid" src="<%- item.image %>" style="max-width: 200px">
         <% } %>

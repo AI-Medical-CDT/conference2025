@@ -9,9 +9,9 @@ Website for the UKRI AI-Medical CDT Conference 2025
 - [Jost Font](https://fonts.google.com/specimen/Jost)
 - Extensions:
     - [fontawesome](https://github.com/quarto-ext/fontawesome)
-    - [quarto-social-share](https://github.com/schochastics/quarto-social-share) - modified to include a registration button
 
 ## Acknowledgements
 
 - Navbar animation code adapted from [Ella Kaye's blog](https://github.com/EllaKaye/ellakaye.co.uk)
 - Grid ejs files adapted from [level-up-shiny](https://github.com/posit-conf-2024/level-up-shiny)
+- Code for share-button.js taken from [share-button](https://github.com/daviddarnes/share-button)
