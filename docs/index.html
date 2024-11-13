@@ -183,6 +183,10 @@ background: #00000000;
 <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
 <script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<link href="site_libs/leaflet-easybutton-1.3.1/easy-button.css" rel="stylesheet">
+<script src="site_libs/leaflet-easybutton-1.3.1/easy-button.js"></script>
+<script src="site_libs/leaflet-easybutton-1.3.1/EasyButton-binding.js"></script>
+<link href="site_libs/ionicons-2.0.1/ionicons.min.css" rel="stylesheet">
 <style>
 #title-block-header.quarto-title-block.default .quarto-title-meta {
   color: #ffffff;
@@ -333,15 +337,15 @@ No matching items
 <h1>Venue</h1>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-aa78c86a3129cdb3740f" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-aa78c86a3129cdb3740f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0'>Nexus, Leeds<\/a><\/b><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"className":""}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-3e71d164f15b32c0470b" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-3e71d164f15b32c0470b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[53.805251,-1.550028],15,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank'>Nexus<\/a><\/b><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"closeOnClick":false,"className":"","autoClose":false}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":["calls.1.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 </div>
 </div>
 </section>
 <section id="sec-organisers" class="level1">
 <h1>Organisers</h1>
-<section id="student-organising-committee" class="level2">
-<h2 class="anchored" data-anchor-id="student-organising-committee">Student Organising Committee</h2>
+<section id="student-committee" class="level2">
+<h2 class="anchored" data-anchor-id="student-committee">Student Committee</h2>
 <div id="listing-students" class="quarto-listing quarto-listing-container-custom">
 <div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
 
@@ -969,7 +973,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Made with <i class="fa-solid fa-heart" aria-label="heart"></i> and <a href="https://quarto.org">Quarto</a></p>
+<p>Made with <a href="https://quarto.org">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
 <p><a class="cdt-link" href="https://ai-medical.leeds.ac.uk/" title="CDT Website" target="_blank" rel="noopener"><i class="fa-solid fa-globe fa-xl" aria-label="globe"></i></a> <a class="cdt-link" href="https://x.com/LeedsMedAI_CDT" title="CDT Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter fa-xl" aria-label="twitter"></i></a> <a class="cdt-link" href="https://leeds-ai-cdt.github.io/" title="CDT Blog" target="_blank" rel="noopener"><i class="fa-solid fa-blog fa-xl" aria-label="blog"></i></a></p>

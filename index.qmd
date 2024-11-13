@@ -70,24 +70,25 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(dplyr,warn.conflicts = FALSE)
 library(leaflet,warn.conflicts = FALSE)
+library(leaflet.extras)
 library(htmltools,warn.conflicts = FALSE)
 
 content <- paste(sep = "<br/>",
-  "<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0'>Nexus, Leeds</a></b>",
+  "<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank'>Nexus</a></b>",
   "Discovery Way",
   "University of Leeds",
   "Leeds, LS2 3AA"
 )
 
-leaflet() %>% addTiles() %>%
+leaflet() %>% setView(-1.550028, 53.805251, zoom = 15) %>% addTiles() %>% addResetMapButton() %>%
   addPopups(lng=-1.550028, lat=53.805251, content,
-    options = popupOptions(closeButton = FALSE)
+    options = popupOptions(closeButton = FALSE, autoClose = FALSE, closeOnClick = FALSE)
   )
 ```
 
 # Organisers {#sec-organisers}
 
-## Student Organising Committee
+## Student Committee
 
 :::{#students}
 :::
