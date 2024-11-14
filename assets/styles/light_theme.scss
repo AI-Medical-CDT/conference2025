@@ -44,20 +44,7 @@ $navbar-fg: $body-color;
 
 .navbar {
   font-family: $navbar-font-family;
-}
-
-#TOC {
-  font-family: $toc-font-family;
-  padding-bottom: 0.1em;
-  font-weight: 300;
-
-  .active {
-      font-weight: 400;
-  }
-
-  #toc-title {
-      font-weight: 600;
-  }
+  font-weight: 500;
 }
 
 // navbar title animation

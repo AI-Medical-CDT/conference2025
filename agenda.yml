@@ -10,7 +10,7 @@
 
 - time: "11:00-12:00"
   title: "Keynote Title by Speaker"
-  description: "Talk Abstract"
+  description: "Keynote Abstract"
   logo: assets/imgs/icons/keynote.png
 
 - time: "12:00-13:00"
@@ -30,12 +30,12 @@
 
 - time: "15:00-16:00"
   title: "Keynote Title by Speaker"
-  description: "Talk Abstract"
+  description: "Keynote Abstract"
   logo: assets/imgs/icons/keynote.png
 
 - time: "16:00-17:30"
   title: "Poster Session"
-  description: "Time to unleash your inner art critic. Poster presentations by CDT students."
+  description: "Time to unleash your inner art critic for poster presentations from CDT students."
   logo: assets/imgs/icons/poster.png 
 
 - time: "17:30-18:30"
