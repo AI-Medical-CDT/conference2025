@@ -21,3 +21,12 @@
 .button-container {
   display: flex;
 }
+
+.d-grid {
+  img {
+    transition: all .25s ease-in-out;
+  }
+  img:hover {
+    transform: scale(1.025);
+  }
+}

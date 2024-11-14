@@ -7,7 +7,9 @@
       "staff.yml",
       "students.yml",
       "exec.yml",
-      "agenda.yml"
+      "agenda.yml",
+      "assets/imgs/gallery/*.jpg",
+      "gallery.yml"
     ]
   }
 }
