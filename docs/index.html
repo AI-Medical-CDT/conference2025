@@ -155,6 +155,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-agenda .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-time','listing-title','listing-description','listing-logo',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-time","listing-title","listing-description","listing-logo"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-agenda'] = new List('listing-agenda', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <style>
@@ -196,7 +224,7 @@ background: #00000000;
   background-position-y: center;
 }
 #title-block-header {
-  background-image: url(./assets/imgs/cropped.jpg);
+  background-image: url(./assets/imgs/banner_cropped.jpg);
   background-size: cover;
   background-position-y: center;
   height: 400px;
@@ -310,13 +338,13 @@ background: #00000000;
 <div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
 
     <div class="text-center">
-        <a href="https://www.cruk.cam.ac.uk/research-groups/markowetz-group/" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/florian.png" style="max-width: 200px"></a>
+        <a href="https://www.cruk.cam.ac.uk/research-groups/markowetz-group/" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/keynotes/florian.png" style="max-width: 200px"></a>
         <p class="fs-4 mt-2 mb-0">Florian Markowetz</p>
         <p class="mb-0">Professor of Computational Oncology, University of Cambridge</p>
     </div>
 
     <div class="text-center">
-        <a href="https://www.epfl.ch/labs/gr-pu/members/pearl-pu/" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/pearl.jpg" style="max-width: 200px"></a>
+        <a href="https://www.epfl.ch/labs/gr-pu/members/pearl-pu/" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/keynotes/pearl.jpg" style="max-width: 200px"></a>
         <p class="fs-4 mt-2 mb-0">Pearl Pu</p>
         <p class="mb-0">Senior Scientist and Maître d'Enseignement, École Polytechnique Fédérale de Lausanne</p>
     </div>
@@ -329,16 +357,152 @@ No matching items
 </section>
 <section id="sec-agenda" class="level1">
 <h1>Agenda</h1>
-<div style="text-align: justify">
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<hr style="height:10pt; visibility:hidden;">
+<div id="listing-agenda" class="quarto-listing quarto-listing-container-custom">
+<div class="events">
+    
+    <div class="event-entry">
+        <span class="event-time">10:00-10:45</span>
+        <div class="body">
+            <p class="event-title">Registration</p>
+            <p class="event-description">Sign in at at the registration desk</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/reg.png" alt="Registration" title="Registration">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">10:45-11:00</span>
+        <div class="body">
+            <p class="event-title">Welcome and Introduction</p>
+            <p class="event-description">A few words of welcome from the CDT director and an introduction to the event.</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/keynote.png" alt="Welcome and Introduction" title="Welcome and Introduction">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">11:00-12:00</span>
+        <div class="body">
+            <p class="event-title">Keynote Title by Speaker</p>
+            <p class="event-description">Talk Abstract</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/keynote.png" alt="Keynote Title by Speaker" title="Keynote Title by Speaker">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">12:00-13:00</span>
+        <div class="body">
+            <p class="event-title">Lunch and Networking</p>
+            <p class="event-description">The heart and soul of any conference is the food and networking.</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/food.png" alt="Lunch and Networking" title="Lunch and Networking">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">13:00-14:30</span>
+        <div class="body">
+            <p class="event-title">Spotlights</p>
+            <p class="event-description">A collection of short presentations by CDT students showcasing their research.</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/spotlight.png" alt="Spotlights" title="Spotlights">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">14:30-15:00</span>
+        <div class="body">
+            <p class="event-title">Coffee Break</p>
+            <p class="event-description">Time for a break from sitting down. Grab a beverage and we'll be back in 30 minutes.</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/coffee.png" alt="Coffee Break" title="Coffee Break">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">15:00-16:00</span>
+        <div class="body">
+            <p class="event-title">Keynote Title by Speaker</p>
+            <p class="event-description">Talk Abstract</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/keynote.png" alt="Keynote Title by Speaker" title="Keynote Title by Speaker">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">16:00-17:30</span>
+        <div class="body">
+            <p class="event-title">Poster Session</p>
+            <p class="event-description">Time to unleash your inner art critic. Poster presentations by CDT students.</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/poster.png" alt="Poster Session" title="Poster Session">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">17:30-18:30</span>
+        <div class="body">
+            <p class="event-title">Industry Panel</p>
+            <p class="event-description">A discussion about cutting-edge commercial research at the intersection of AI and healthcare.</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/panel.png" alt="Industry Panel" title="Industry Panel">
+            
+        </div>
+    </div>
+    
+    <div class="event-entry">
+        <span class="event-time">18:30-20:00</span>
+        <div class="body">
+            <p class="event-title">Reception and Dinner</p>
+            <p class="event-description">The heart and soul of any conference is the food and networking.</p>
+        </div>
+        <div class="logo">
+            
+            <img src="assets/imgs/icons/food.png" alt="Reception and Dinner" title="Reception and Dinner">
+            
+        </div>
+    </div>
+    
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 </section>
 <section id="sec-venue" class="level1">
 <h1>Venue</h1>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-3e71d164f15b32c0470b" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-3e71d164f15b32c0470b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[53.805251,-1.550028],15,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank'>Nexus<\/a><\/b><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"closeOnClick":false,"className":"","autoClose":false}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":["calls.1.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-fe1a2c1d591d5df5c67c" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-fe1a2c1d591d5df5c67c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[53.805251,-1.550028],15,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank'>Nexus<\/a><\/b><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"closeOnClick":false,"className":"","autoClose":false}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":["calls.1.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 </div>
 </div>
 </section>
@@ -351,7 +515,7 @@ No matching items
 
     <div class="text-center">
         
-            <a href="https://ai-medical.leeds.ac.uk/profiles/sashi-mahapatra/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/sashi.png" style="max-width: 200px"></a>
+            <a href="https://ai-medical.leeds.ac.uk/profiles/sashi-mahapatra/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/students/sashi.png" style="max-width: 200px"></a>
         
         <p class="fs-4 mt-2 mb-0">Sashi Mahapatra</p>
         <p class="mb-0">Role</p>
@@ -359,7 +523,7 @@ No matching items
 
     <div class="text-center">
         
-            <a href="https://ai-medical.leeds.ac.uk/profiles/arpita-saggar/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/arpita.jpg" style="max-width: 200px"></a>
+            <a href="https://ai-medical.leeds.ac.uk/profiles/arpita-saggar/" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/students/arpita.jpg" style="max-width: 200px"></a>
         
         <p class="fs-4 mt-2 mb-0">Arpita Saggar</p>
         <p class="mb-0">Role</p>
@@ -378,7 +542,7 @@ No matching items
 
     <div class="text-center">
         
-            <a href="https://eps.leeds.ac.uk/computing/staff/84/professor-david-hogg" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/david.jpg" style="max-width: 200px"></a>
+            <a href="https://eps.leeds.ac.uk/computing/staff/84/professor-david-hogg" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/exec/david.jpg" style="max-width: 200px"></a>
         
         <p class="fs-4 mt-2 mb-0">Professor David Hogg</p>
         <p class="mb-0">Professor of Artificial Intelligence and CDT Director</p>
@@ -386,7 +550,7 @@ No matching items
 
     <div class="text-center">
         
-            <a href="https://eps.leeds.ac.uk/computing/staff/184/professor-vania-dimitrova" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/Vania.jpg" style="max-width: 200px"></a>
+            <a href="https://eps.leeds.ac.uk/computing/staff/184/professor-vania-dimitrova" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/exec/Vania.jpg" style="max-width: 200px"></a>
         
         <p class="fs-4 mt-2 mb-0">Professor Vania Dimitrova</p>
         <p class="mb-0">Professor of Human-Centred AI and CDT Co-director</p>
@@ -394,7 +558,7 @@ No matching items
 
     <div class="text-center">
         
-            <a href="https://eps.leeds.ac.uk/computing/staff/259/owen-johnson" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/owen.jpg" style="max-width: 200px"></a>
+            <a href="https://eps.leeds.ac.uk/computing/staff/259/owen-johnson" target="_blank" class="listing-title"><img class="rounded-circle img-fluid" src="assets/imgs/exec/owen.jpg" style="max-width: 200px"></a>
         
         <p class="fs-4 mt-2 mb-0">Mr Owen Johnson</p>
         <p class="mb-0">Associate Professor and CDT Co-director</p>
@@ -402,7 +566,7 @@ No matching items
 
     <div class="text-center">
         
-            <img class="rounded-circle img-fluid" src="assets/imgs/felicia.jpg" style="max-width: 200px">
+            <img class="rounded-circle img-fluid" src="assets/imgs/exec/felicia.jpg" style="max-width: 200px">
         
         <p class="fs-4 mt-2 mb-0">Felicia Black</p>
         <p class="mb-0">Centre Manager (interim)</p>
@@ -410,7 +574,7 @@ No matching items
 
     <div class="text-center">
         
-            <img class="rounded-circle img-fluid" src="assets/imgs/azema.jpg" style="max-width: 200px">
+            <img class="rounded-circle img-fluid" src="assets/imgs/exec/azema.jpg" style="max-width: 200px">
         
         <p class="fs-4 mt-2 mb-0">Miss Azema Maskeen</p>
         <p class="mb-0">Administrative Assistant</p>

@@ -6,7 +6,8 @@
       "directors.yml",
       "staff.yml",
       "students.yml",
-      "exec.yml"
+      "exec.yml",
+      "agenda.yml"
     ]
   }
 }

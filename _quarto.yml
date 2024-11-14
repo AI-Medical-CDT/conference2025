@@ -37,8 +37,8 @@ format:
   html:
     toc: false
     theme: 
-      light: [cosmo, assets/styles/light_theme.scss]
-      dark: [cosmo, assets/styles/dark_theme.scss]
+      light: [cosmo, assets/styles/light_theme.scss, assets/styles/agenda_style.scss]
+      dark: [cosmo, assets/styles/dark_theme.scss, assets/styles/agenda_style.scss]
     css: assets/styles/styles.css
     smooth-scroll: true
     code-link: true

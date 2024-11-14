@@ -1,0 +1,49 @@
+- time: "10:00-10:45"
+  title: "Registration"
+  description: "Sign in at at the registration desk"
+  logo: assets/imgs/icons/reg.png
+
+- time: "10:45-11:00"
+  title: "Welcome and Introduction"
+  description: "A few words of welcome from the CDT director and an introduction to the event."
+  logo: assets/imgs/icons/keynote.png
+
+- time: "11:00-12:00"
+  title: "Keynote Title by Speaker"
+  description: "Talk Abstract"
+  logo: assets/imgs/icons/keynote.png
+
+- time: "12:00-13:00"
+  title: "Lunch and Networking"
+  description: "The heart and soul of any conference is the food and networking."
+  logo: assets/imgs/icons/food.png
+
+- time: "13:00-14:30"
+  title: "Spotlights"
+  description: "A collection of short presentations by CDT students showcasing their research."
+  logo: assets/imgs/icons/spotlight.png
+
+- time: "14:30-15:00"
+  title: "Coffee Break"
+  description: "Time for a break from sitting down. Grab a beverage and we'll be back in 30 minutes."
+  logo: assets/imgs/icons/coffee.png
+
+- time: "15:00-16:00"
+  title: "Keynote Title by Speaker"
+  description: "Talk Abstract"
+  logo: assets/imgs/icons/keynote.png
+
+- time: "16:00-17:30"
+  title: "Poster Session"
+  description: "Time to unleash your inner art critic. Poster presentations by CDT students."
+  logo: assets/imgs/icons/poster.png 
+
+- time: "17:30-18:30"
+  title: "Industry Panel"
+  description: "A discussion about cutting-edge commercial research at the intersection of AI and healthcare."
+  logo: assets/imgs/icons/panel.png
+
+- time: "18:30-20:00"
+  title: "Reception and Dinner"
+  description: "The heart and soul of any conference is the food and networking."
+  logo: assets/imgs/icons/food.png

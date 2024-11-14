@@ -17,7 +17,7 @@ include-in-header:
         background-position-y: center;
       }
       #title-block-header {
-        background-image: url(./assets/imgs/cropped.jpg);
+        background-image: url(./assets/imgs/banner_cropped.jpg);
         background-size: cover;
         background-position-y: center;
         height: 400px;
@@ -35,6 +35,9 @@ listing:
   - id: students
     template: assets/styles/organisers_grid.ejs
     contents: students.yml
+  - id: agenda
+    contents: agenda.yml
+    template: assets/styles/agenda.ejs
 
 execute: 
   echo: false
@@ -59,10 +62,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 :::
 
 # Agenda {#sec-agenda}
+<hr style="height:10pt; visibility:hidden;" />
 
-<div style="text-align: justify">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</div>
+:::{#agenda}
+:::
 
 # Venue {#sec-venue}
 

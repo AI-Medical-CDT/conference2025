@@ -1,8 +1,8 @@
 - name: Sashi Mahapatra
   role: "Role"
-  image: assets/imgs/sashi.png
+  image: assets/imgs/students/sashi.png
   href: https://ai-medical.leeds.ac.uk/profiles/sashi-mahapatra/
 - name: Arpita Saggar
   role: "Role"
-  image: assets/imgs/arpita.jpg
+  image: assets/imgs/students/arpita.jpg
   href: https://ai-medical.leeds.ac.uk/profiles/arpita-saggar/
