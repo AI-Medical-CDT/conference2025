@@ -17,6 +17,8 @@ website:
         text: Venue
       - href: index.qmd#sec-organisers
         text: Organisers
+      - href: index.qmd#sec-contact
+        text: Contact Us
       - text: Past Editions
         menu:
           - text: "2024"

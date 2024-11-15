@@ -80,12 +80,13 @@ and partners to reconnect and seek further opportunities for collaboration.
 :::
 
 # Agenda {#sec-agenda}
-<hr style="height:10pt; visibility:hidden;" />
+<hr style="height:3pt; visibility:hidden;" />
 
 :::{#agenda}
 :::
 
 # Venue {#sec-venue}
+<hr style="height:1.5pt; visibility:hidden;" />
 
 ```{r warning=FALSE, message=FALSE, echo=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
@@ -118,3 +119,9 @@ leaflet() %>% setView(-1.550028, 53.805251, zoom = 15) %>% addTiles() %>% addRes
 
 :::{#exec}
 :::
+
+# Contact Us {#sec-contact}
+
+<div style="text-align: justify; font-weight:600">
+For any queries related to the conference, please get in touch with us at email@leeds.ac.uk.
+</div>
