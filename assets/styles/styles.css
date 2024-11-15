@@ -30,3 +30,7 @@
     transform: scale(1.025);
   }
 }
+
+.body {
+  font-weight: 500;
+}
