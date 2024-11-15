@@ -5,7 +5,7 @@
 
 - time: "10:45-11:00"
   title: "Welcome and Introduction"
-  description: "A few words of welcome from the CDT director and an introduction to the event."
+  description: "A warm welcome and an introduction to the event from our CDT director."
   logo: assets/imgs/icons/keynote.png
 
 - time: "11:00-12:00"
@@ -35,7 +35,7 @@
 
 - time: "16:00-17:30"
   title: "Poster Session"
-  description: "Time to unleash your inner art critic for poster presentations from CDT students."
+  description: "Time to unleash your inner art critic for poster presentations from our CDT students."
   logo: assets/imgs/icons/poster.png 
 
 - time: "17:30-18:30"
