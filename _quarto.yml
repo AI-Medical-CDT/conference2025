@@ -30,7 +30,7 @@ website:
       <a class="cdt-link" href="https://x.com/LeedsMedAI_CDT" title="CDT Twitter" target="_blank" rel="noopener">{{< fa brands twitter size=xl >}}</a>
       <a class="cdt-link" href="https://leeds-ai-cdt.github.io/" title="CDT Blog" target="_blank" rel="noopener">{{< fa blog size=xl >}}</a>
     right: |
-      ![](assets/imgs/logos.png){fig-alt="logos" width=300px}
+      ![](assets/imgs/edit.png){fig-alt="logos" width=280px}
   back-to-top-navigation: true
 
 format:
