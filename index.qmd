@@ -59,9 +59,7 @@ execute:
 
 The UKRI CDT in AI for Medical Diagnosis and Care is training over 50 graduates to become leaders in the application 
 of artificial intelligence to healthcare. With a focus on research excellence, collaboration, and innovation, the Centre is committed to 
-producing highly skilled professionals who can harness AI to develop secure, privacy-compliant solutions for medical diagnosis and care. 
-<!--- The Centre prioritises equality, diversity, and inclusion, aiming for a balanced cohort of graduates from diverse health and STEM backgrounds. -->
-By fostering industry partnerships and international collaborations, the Centre aims to position the UK as a global leader in health-related 
+producing highly skilled professionals who can harness AI to develop secure, privacy-compliant solutions for medical diagnosis and care. By fostering industry partnerships and international collaborations, the Centre aims to position the UK as a global leader in health-related 
 AI research and technology transfer.
 
 Our annual conference brings together the CDT’s students, academics, and industry partners, offering a dynamic platform to explore and 
