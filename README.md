@@ -7,6 +7,40 @@ Website for the UKRI AI-Medical CDT Conference 2025
 - [R](https://www.r-project.org/)
     - Packages: [leaflet](https://cran.r-project.org/web/packages/leaflet/index.html), [leaflet.extras](https://cran.r-project.org/web/packages/leaflet.extras/index.html), [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) and [htmltools](https://cran.r-project.org/web/packages/htmltools/index.html)
 
+## Repo Organisation
+
+```
+📦conference2025
+ ┣ 📂.quarto
+ ┣ 📂assets
+ ┃ ┣ 📂imgs --> Images Used
+ ┃ ┃ ┣ 📂exec
+ ┃ ┃ ┣ 📂gallery
+ ┃ ┃ ┣ 📂icons
+ ┃ ┃ ┣ 📂keynotes
+ ┃ ┃ ┣ 📂students
+ ┃ ┃ ┣ 📜banner_cropped.jpg
+ ┃ ┃ ┗ 📜logos.png
+ ┃ ┗ 📂styles   --> Files for styling and layout
+ ┃ ┃ ┣ 📜agenda.ejs
+ ┃ ┃ ┣ 📜agenda_style.scss
+ ┃ ┃ ┣ 📜dark_theme.scss
+ ┃ ┃ ┣ 📜gallery.ejs
+ ┃ ┃ ┣ 📜keynotes_grid.ejs
+ ┃ ┃ ┣ 📜light_theme.scss
+ ┃ ┃ ┣ 📜organisers_grid.ejs
+ ┃ ┃ ┗ 📜styles.css
+ ┣ 📂docs   --> Folder for rendered site
+ ┣ 📂_extensions
+ ┣ 📂_site
+ ┣ 📜.gitattributes
+ ┣ 📜.gitignore
+ ┣ 📜index.qmd  --> QMD for main page
+ ┣ 📜README.md
+ ┣ 📜share-button.js
+ ┗ 📜_quarto.yml    --> Quarto config file
+```
+
 ## Acknowledgements
 
 | Asset  | Source  | License  | Modified  |

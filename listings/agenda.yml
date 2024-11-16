@@ -1,6 +1,6 @@
 - time: "10:00-10:45"
   title: "Registration"
-  description: "Sign in at at the registration desk"
+  description: "Sign in at the registration desk"
   logo: assets/imgs/icons/reg.png
 
 - time: "10:45-11:00"
