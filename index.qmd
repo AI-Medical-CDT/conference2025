@@ -28,19 +28,19 @@ include-in-header:
 listing: 
   - id: keynotes
     template: assets/styles/keynotes_grid.ejs
-    contents: keynotes.yml
+    contents: listings/keynotes.yml
   - id: exec
     template: assets/styles/organisers_grid.ejs
-    contents: exec.yml
+    contents: listings/exec.yml
   - id: students
     template: assets/styles/organisers_grid.ejs
-    contents: students.yml
+    contents: listings/students.yml
   - id: agenda
-    contents: agenda.yml
+    contents: listings/agenda.yml
     template: assets/styles/agenda.ejs
   - id: gallery
     template: assets/styles/gallery.ejs
-    contents: gallery.yml
+    contents: listings/gallery.yml
 
 execute: 
   echo: false

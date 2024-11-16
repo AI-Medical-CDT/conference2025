@@ -9,7 +9,12 @@
       "exec.yml",
       "agenda.yml",
       "assets/imgs/gallery/*.jpg",
-      "gallery.yml"
+      "gallery.yml",
+      "listings/keynotes.yml",
+      "listings/exec.yml",
+      "listings/students.yml",
+      "listings/agenda.yml",
+      "listings/gallery.yml"
     ]
   }
 }
