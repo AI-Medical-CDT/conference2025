@@ -1,15 +1,6 @@
 {
   "listingMap": {
     "index.qmd": [
-      "keynotes.yml",
-      "organisers.yml",
-      "directors.yml",
-      "staff.yml",
-      "students.yml",
-      "exec.yml",
-      "agenda.yml",
-      "assets/imgs/gallery/*.jpg",
-      "gallery.yml",
       "listings/keynotes.yml",
       "listings/exec.yml",
       "listings/students.yml",

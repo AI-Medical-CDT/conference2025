@@ -63,6 +63,8 @@ Our annual conference brings together the CDT’s students, academics, and indus
 discuss the latest research from the CDT. Students will share updates on their progress, while our speakers will offer new perspectives to 
 enrich the community. We hope that the event will provide an opportunity for our diverse network of researchers and healthcare professionals to reconnect and seek further opportunities for collaboration.
 
+SOME TEXT TO CHECK AUTO RENDER
+
 </div>
 
 ::: {#gallery}
