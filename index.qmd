@@ -41,13 +41,10 @@ listing:
   - id: gallery
     template: assets/styles/gallery.ejs
     contents: listings/gallery.yml
-
-execute: 
-  echo: false
 ---
 
 <div class="button-container">
-  <a href="https://github.com/arpita2512/conference2025" class="btn btn-primary btn-lg mb-0" role="button" style="margin-right:10px" target="_blank">Register</a>
+  <a href="https://forms.office.com/e/Ghmr904RzC" class="btn btn-primary btn-lg mb-0" role="button" style="margin-right:10px" target="_blank">Register</a>
   <share-button>
   <button type="button" class="btn btn-primary btn-lg mb-0"><i class="fa-regular fa-share-from-square"></i></button>
   </share-button>
@@ -120,5 +117,5 @@ leaflet() %>% setView(-1.550028, 53.805251, zoom = 15) %>% addTiles() %>% addRes
 # Contact Us {#sec-contact}
 
 <div style="text-align: justify; font-weight:600">
-For any queries related to the conference, please get in touch with us at email@leeds.ac.uk.
+For any queries related to the conference, please get in touch with us at [AI-Medical@leeds.ac.uk](mailto:AI-Medical@leeds.ac.uk).
 </div>
