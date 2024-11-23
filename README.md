@@ -9,14 +9,19 @@ Website for the UKRI AI-Medical CDT Conference 2025
 
 ## Repo Organisation
 
+Built site: gh-pages branch
+
 ```
 📦conference2025
  ┣ 📂.quarto
+ ┣ 📂.github
+ ┃ ┗ 📂workflows
+ ┃ ┃ ┗ 📜quarto-render-publish.yml -- > YML for automated build
  ┣ 📂assets
  ┃ ┣ 📂imgs  --> Images Used
  ┃ ┗ 📂styles  --> CSS & SCSS for styling & EJS for layout
  ┣ 📂listings  --> YML for Quarto listings
- ┣ 📂docs  --> Folder for rendered site
+ ┣ 📂docs
  ┣ 📂_extensions
  ┣ 📂_site
  ┣ 📜.gitattributes
