@@ -41,8 +41,6 @@ listing:
   - id: gallery
     template: assets/styles/gallery.ejs
     contents: listings/gallery.yml
-
-lightbox: auto
 ---
 
 <div class="button-container">
