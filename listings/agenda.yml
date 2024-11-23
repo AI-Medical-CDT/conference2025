@@ -9,8 +9,8 @@
   logo: assets/imgs/icons/keynote.png
 
 - time: "11:00-12:00"
-  title: "Keynote Title by Speaker"
-  description: "Keynote Abstract"
+  title: "Keynote by Invited Speaker"
+  description: "Abstract (coming soon!)"
   logo: assets/imgs/icons/keynote.png
 
 - time: "12:00-13:00"
@@ -29,8 +29,8 @@
   logo: assets/imgs/icons/coffee.png
 
 - time: "15:00-16:00"
-  title: "Keynote Title by Speaker"
-  description: "Keynote Abstract"
+  title: "Keynote by Invited Speaker"
+  description: "Abstract (coming soon!)"
   logo: assets/imgs/icons/keynote.png
 
 - time: "16:00-17:30"
