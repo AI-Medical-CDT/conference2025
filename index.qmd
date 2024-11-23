@@ -44,9 +44,9 @@ listing:
 ---
 
 <div class="button-container">
-  <a href="https://forms.office.com/e/Ghmr904RzC" class="btn btn-primary btn-lg mb-0" role="button" style="margin-right:10px" target="_blank">Register</a>
+  <a href="https://forms.office.com/e/Ghmr904RzC" class="btn btn-primary btn-lg mb-0 rounded-pill" role="button" style="margin-right:10px" target="_blank">Register</a>
   <share-button>
-  <button type="button" class="btn btn-primary btn-lg mb-0"><i class="fa-regular fa-share-from-square"></i></button>
+  <button type="button" class="btn btn-primary btn-lg mb-0 rounded-pill"><i class="fa-regular fa-share-from-square"></i></button>
   </share-button>
 </div>
 
