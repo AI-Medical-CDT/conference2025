@@ -5,7 +5,11 @@
         <span class="event-time"><%= event.time %></span>
         <div class="body">
             <p class="event-title"><%= event.title %></p>
+            <% if (event.abstract) { %>
+            <p class="event-description"><a href="<%= event.abstract %>">:<%= event.description %></a></p>
+            <% } else { %>
             <p class="event-description"><%= event.description %></p>
+            <% } %>
         </div>
         <div class="logo">
             <% if (event.url) { %>

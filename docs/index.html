@@ -168,9 +168,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-time','listing-title','listing-description','listing-logo',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-time','listing-title','listing-description','listing-logo','listing-abstract',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-time","listing-title","listing-description","listing-logo"],
+      searchColumns: ["listing-time","listing-title","listing-description","listing-logo","listing-abstract"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -262,6 +262,14 @@ background: #00000000;
 }
 </style>
 <script type="module" src="share-button.js"></script>
+<script src="nutshell.js"></script>
+<script>
+Nutshell.setOptions({
+  startOnLoad: true,
+  lang: 'en',
+  dontEmbedHeadings: true, // If 'true', removes the "embed this as a nutshell" option on headings
+});
+</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -469,7 +477,9 @@ No matching items
         <span class="event-time">10:00-10:45</span>
         <div class="body">
             <p class="event-title">Registration</p>
+            
             <p class="event-description">Sign in at the registration desk</p>
+            
         </div>
         <div class="logo">
             
@@ -482,7 +492,9 @@ No matching items
         <span class="event-time">10:45-11:00</span>
         <div class="body">
             <p class="event-title">Welcome and Introduction</p>
+            
             <p class="event-description">A warm welcome and an introduction to the event from our CDT director.</p>
+            
         </div>
         <div class="logo">
             
@@ -495,7 +507,9 @@ No matching items
         <span class="event-time">11:00-12:00</span>
         <div class="body">
             <p class="event-title">Keynote by Invited Speaker</p>
-            <p class="event-description">Abstract (coming soon!)</p>
+            
+            <p class="event-description"><a href="listings/keynote1_abs.html">:Talk Title</a></p>
+            
         </div>
         <div class="logo">
             
@@ -508,7 +522,9 @@ No matching items
         <span class="event-time">12:00-13:00</span>
         <div class="body">
             <p class="event-title">Lunch and Networking</p>
+            
             <p class="event-description">The heart and soul of any conference is the food and networking.</p>
+            
         </div>
         <div class="logo">
             
@@ -521,7 +537,9 @@ No matching items
         <span class="event-time">13:00-14:30</span>
         <div class="body">
             <p class="event-title">Spotlights</p>
+            
             <p class="event-description">A collection of short presentations by CDT students showcasing their research.</p>
+            
         </div>
         <div class="logo">
             
@@ -534,7 +552,9 @@ No matching items
         <span class="event-time">14:30-15:00</span>
         <div class="body">
             <p class="event-title">Coffee Break</p>
+            
             <p class="event-description">Time for a break from sitting down. Grab a beverage and we'll be back in 30 minutes.</p>
+            
         </div>
         <div class="logo">
             
@@ -547,7 +567,9 @@ No matching items
         <span class="event-time">15:00-16:00</span>
         <div class="body">
             <p class="event-title">Keynote by Invited Speaker</p>
-            <p class="event-description">Abstract (coming soon!)</p>
+            
+            <p class="event-description"><a href="listings/keynote2_abs.html">:Talk Title</a></p>
+            
         </div>
         <div class="logo">
             
@@ -560,7 +582,9 @@ No matching items
         <span class="event-time">16:00-17:30</span>
         <div class="body">
             <p class="event-title">Poster Session</p>
+            
             <p class="event-description">Time to unleash your inner art critic for poster presentations from our CDT students.</p>
+            
         </div>
         <div class="logo">
             
@@ -573,7 +597,9 @@ No matching items
         <span class="event-time">17:30-18:30</span>
         <div class="body">
             <p class="event-title">Industry Panel</p>
+            
             <p class="event-description">A discussion about cutting-edge commercial research at the intersection of AI and healthcare.</p>
+            
         </div>
         <div class="logo">
             
@@ -586,7 +612,9 @@ No matching items
         <span class="event-time">18:30-20:00</span>
         <div class="body">
             <p class="event-title">Reception and Dinner</p>
+            
             <p class="event-description">The heart and soul of any conference is the food and networking.</p>
+            
         </div>
         <div class="logo">
             
@@ -606,8 +634,8 @@ No matching items
 <hr style="height:1.5pt; visibility:hidden;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-78a2698824cc5d68d85d" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-78a2698824cc5d68d85d">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[53.805251,-1.550028],15,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank'>Nexus<\/a><\/b><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"closeOnClick":false,"className":"","autoClose":false}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":["calls.1.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-cd920a40d52514e23a73" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-cd920a40d52514e23a73">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[53.805251,-1.550028],15,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank'>Nexus<\/a><\/b><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"closeOnClick":false,"className":"","autoClose":false}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":["calls.1.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 </div>
 </div>
 </section>
@@ -1258,7 +1286,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","selector":".lightbox"});</script>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false,"descPosition":"bottom"});</script>
 
 
 

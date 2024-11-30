@@ -10,7 +10,8 @@
 
 - time: "11:00-12:00"
   title: "Keynote by Invited Speaker"
-  description: "Abstract (coming soon!)"
+  description: "Talk Title"
+  abstract: listings/keynote1_abs.html
   logo: assets/imgs/icons/keynote.png
 
 - time: "12:00-13:00"
@@ -30,7 +31,8 @@
 
 - time: "15:00-16:00"
   title: "Keynote by Invited Speaker"
-  description: "Abstract (coming soon!)"
+  description: "Talk Title"
+  abstract: listings/keynote2_abs.html
   logo: assets/imgs/icons/keynote.png
 
 - time: "16:00-17:30"

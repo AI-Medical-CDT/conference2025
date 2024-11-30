@@ -24,6 +24,14 @@ include-in-header:
       }
       </style>
       <script type="module" src="share-button.js"></script>
+      <script src="nutshell.js"></script>
+      <script>
+      Nutshell.setOptions({
+        startOnLoad: true,
+        lang: 'en', 
+        dontEmbedHeadings: true, // If 'true', removes the "embed this as a nutshell" option on headings
+      });
+      </script>
 
 listing: 
   - id: keynotes
