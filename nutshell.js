@@ -2159,7 +2159,6 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     .nutshell-bubble code{
         background: #ddd;
         border-radius: 5px;
-        /*font-weight:100;*/
         padding: 0 5px;
     }
     .nutshell-bubble blockquote{
@@ -2236,7 +2235,6 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
 
         /* Just a times sign */
         font-size: 40px;
-        /*font-weight: 100;*/
         height: 40px;
 
         /* Anim */
