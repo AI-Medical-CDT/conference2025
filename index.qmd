@@ -98,7 +98,7 @@ library(leaflet.extras)
 library(htmltools,warn.conflicts = FALSE)
 
 content <- paste(sep = "<br/>",
-  "<b><a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank'>Nexus</a></b>",
+  "<a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank' style='font-weight:bold'>Nexus</a>",
   "Discovery Way",
   "University of Leeds",
   "Leeds, LS2 3AA"
@@ -125,5 +125,5 @@ leaflet() %>% setView(-1.550028, 53.805251, zoom = 15) %>% addTiles() %>% addRes
 # Contact Us {#sec-contact}
 
 <div style="text-align: justify; font-weight:600">
-For any queries related to the conference, please get in touch with us at [AI-Medical@leeds.ac.uk](mailto:AI-Medical@leeds.ac.uk).
+For any queries related to the conference, please get in touch with us at <a href="mailto:AI-Medical@leeds.ac.uk">AI-Medical@leeds.ac.uk</a>.
 </div>
