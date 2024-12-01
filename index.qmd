@@ -125,5 +125,5 @@ leaflet() %>% setView(-1.550028, 53.805251, zoom = 15) %>% addTiles() %>% addRes
 # Contact Us {#sec-contact}
 
 <div style="text-align: justify; font-weight:600">
-For any queries related to the conference, please get in touch with us at <a href="mailto:AI-Medical@leeds.ac.uk">AI-Medical@leeds.ac.uk</a>.
+For any queries related to the conference, please get in touch with us at <a href="mailto:AI-Medical@leeds.ac.uk" style="font-weight:600">AI-Medical@leeds.ac.uk</a>.
 </div>
