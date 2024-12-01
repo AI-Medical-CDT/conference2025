@@ -6,7 +6,7 @@
         <div class="body">
             <p class="event-title"><%= event.title %></p>
             <% if (event.abstract) { %>
-            <p class="event-description"><a href="<%= event.abstract %>" class="event-description">:<%= event.description %></a></p>
+            <p><a href="<%= event.abstract %>" class="event-description">:<%= event.description %></a></p>
             <% } else { %>
             <p class="event-description"><%= event.description %></p>
             <% } %>
