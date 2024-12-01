@@ -29,7 +29,7 @@ include-in-header:
       Nutshell.setOptions({
         startOnLoad: true,
         lang: 'en', 
-        dontEmbedHeadings: true, // If 'true', removes the "embed this as a nutshell" option on headings
+        dontEmbedHeadings: true
       });
       </script>
 

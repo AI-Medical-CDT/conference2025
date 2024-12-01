@@ -171,7 +171,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             // Fill out other UI with localized text
             // (only set by user after Nutshell.js file included, hence this)
             Nutshell.fillCloseAllText();
-            Nutshell.fillEmbedModalText();
+            //Nutshell.fillEmbedModalText();
 
         }else{
 
@@ -1554,7 +1554,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         embed.className = 'nutshell-bubble-overflow-embed-button';
         embed.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
         embed.onclick = ()=>{
-            Nutshell.showEmbedModal(expandable.href, expandable.textContent);
+            //Nutshell.showEmbedModal(expandable.href, expandable.textContent);
         };
         overflow.appendChild(embed);
 
@@ -1710,7 +1710,7 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
                 embedButton.className = 'nutshell-heading-embed';
                 embedButton.innerHTML = `<img src='${Nutshell._dataURIImage}'/>`;
                 embedButton.onclick = ()=>{
-                    Nutshell.showEmbedModal(permalink, headingText);
+                    //Nutshell.showEmbedModal(permalink, headingText);
                 };
                 heading.appendChild(embedButton);
             }
@@ -1844,25 +1844,25 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
         // [DO THIS WHEN SHOW MODAL, because example needs to change each time]
 
         // Step 1: Code for head
-        _p1.innerHTML = Nutshell.getLocalizedText("embedStep1")
-            .replace(`[HEAD]`, `<span style="font-family:monospace">&lt;head&gt;</span>`)
-            .replace(`[CODE]`, `<input style="width:100%" value="<script src='${Nutshell.cdn}'></script>" onclick="select()"/>`);
+        //_p1.innerHTML = Nutshell.getLocalizedText("embedStep1")
+        //    .replace(`[HEAD]`, `<span style="font-family:monospace">&lt;head&gt;</span>`)
+        //    .replace(`[CODE]`, `<input style="width:100%" value="<script src='${Nutshell.cdn}'></script>" onclick="select()"/>`);
 
         // Step 2: Link
-        _p2.innerHTML = Nutshell.getLocalizedText("embedStep2")
-            .replace(`[LINK]`,`
-                <input id="nutshell-embed-modal-link" onclick="select()"/>`);
+        //_p2.innerHTML = Nutshell.getLocalizedText("embedStep2")
+        //    .replace(`[LINK]`,`
+        //        <input id="nutshell-embed-modal-link" onclick="select()"/>`);
 
         // Step 3: That's all, folks!
-        _p3.innerHTML = Nutshell.getLocalizedText("embedStep3");
+        //_p3.innerHTML = Nutshell.getLocalizedText("embedStep3");
 
         // (Learn More)
-        _p4.innerHTML = `<a href='https://ncase.me/nutshell/' target='_blank'>` +
-                            Nutshell.getLocalizedText("learnMore") +
-                        `</a>`;
+        //_p4.innerHTML = `<a href='https://ncase.me/nutshell/' target='_blank'>` +
+        //                    Nutshell.getLocalizedText("learnMore") +
+        //                `</a>`;
 
         // Also, now that document.body exists, put it in
-        document.body.appendChild(_e);
+        //document.body.appendChild(_e);
 
     };
 
@@ -1870,24 +1870,24 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
     Nutshell.showEmbedModal = (url, linkText)=>{
 
         // Animate: show, then fade in.
-        _e.style.display = 'block';
-        setTimeout(()=>{ _e.setAttribute("mode","shown"); },1);
+        //_e.style.display = 'block';
+        //setTimeout(()=>{ _e.setAttribute("mode","shown"); },1);
 
         // Reset Step 0's Example
-        _p0.innerHTML = Nutshell.getLocalizedText("embedStep0")
-            .replace(`[EXAMPLE]`,`<a href='${url}' style='font-weight:bold'>:${linkText}</a>`);
-        Nutshell.convertLinksToExpandables(_p0);
+        //_p0.innerHTML = Nutshell.getLocalizedText("embedStep0")
+        //    .replace(`[EXAMPLE]`,`<a href='${url}' style='font-weight:bold'>:${linkText}</a>`);
+        //Nutshell.convertLinksToExpandables(_p0);
 
         // Update Step 2's link URL
-        _e.querySelector("#nutshell-embed-modal-link").value = url;
+        //_e.querySelector("#nutshell-embed-modal-link").value = url;
 
     };
 
     // Hide Embed Modal
     Nutshell.closeEmbedModal = ()=>{
         // Animate: fade away, then hide
-        _e.setAttribute("mode","hidden");
-        setTimeout(()=>{ _e.style.display='none'; },ANIM_TIME);
+        //_e.setAttribute("mode","hidden");
+        //setTimeout(()=>{ _e.style.display='none'; },ANIM_TIME);
     };
 
 

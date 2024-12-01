@@ -43,3 +43,4 @@ Built site: gh-pages branch
 | Agenda Icons  | [Canva](https://www.canva.com/)  | [Free Content License](https://www.canva.com/policies/content-license-agreement/)  | No  |
 | share-button.js  |  [share-button](https://github.com/daviddarnes/share-button) | [MIT License](https://github.com/daviddarnes/share-button?tab=MIT-1-ov-file#readme)  | No  |
 | EJS files for agenda  |  [Andrew Heiss' Blog](https://github.com/andrewheiss/ath-quarto) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  | Yes  |
+| nutshell.js  |  [nutshell](https://github.com/ncase/nutshell) | [CC0 1.0 Universal](https://github.com/ncase/nutshell?tab=CC0-1.0-1-ov-file) | Yes |
