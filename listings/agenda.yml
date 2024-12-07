@@ -50,12 +50,7 @@
   description: "A discussion about cutting-edge commercial research at the intersection of AI and healthcare."
   logo: assets/imgs/icons/panel.png
 
-- time: "18:00-19:00"
-  title: "Reception"
-  description: "The heart and soul of any conference is the food and networking."
-  logo: assets/imgs/icons/network.png
-
-- time: "19:00-20:00"
-  title: "Dinner"
+- time: "18:00-20:00"
+  title: "Reception and Dinner"
   description: "The heart and soul of any conference is the food and networking."
   logo: assets/imgs/icons/food.png
