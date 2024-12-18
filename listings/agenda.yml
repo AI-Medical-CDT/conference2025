@@ -29,21 +29,21 @@
   description: "The heart and soul of any conference is the food and networking."
   logo: assets/imgs/icons/food.png
 
-- time: "14:00-14:30"
-  title: "Spotlights - Session 2"
-  description: "A collection of short presentations by CDT students showcasing their research."
-  logo: assets/imgs/icons/spotlight.png
-
-- time: "14:30-15:30"
-  title: "Posters - Session 2"
-  description: "Time to unleash your inner art critic for poster presentations from our CDT students."
-  logo: assets/imgs/icons/poster.png 
-
-- time: "15:30-16:30"
+- time: "14:00-15:00"
   title: "Keynote by Pearl Pu"
   description: "Talk Title"
   abstract: listings/keynote2_abs.html
   logo: assets/imgs/icons/keynote.png
+
+- time: "15:00-15:30"
+  title: "Spotlights - Session 2"
+  description: "A collection of short presentations by CDT students showcasing their research."
+  logo: assets/imgs/icons/spotlight.png
+
+- time: "15:30-16:30"
+  title: "Posters - Session 2"
+  description: "Time to unleash your inner art critic for poster presentations from our CDT students."
+  logo: assets/imgs/icons/poster.png 
 
 - time: "16:30-18:00"
   title: "Industry Panel"
