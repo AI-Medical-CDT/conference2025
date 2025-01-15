@@ -10,7 +10,7 @@
 
 - time: "10:35-11:30"
   title: "Keynote by Florian Markowetz"
-  description: "Talk Title"
+  description: "All models are wrong and yours are useless: making clinical prediction models impactful for patients"
   abstract: listings/keynote1_abs.html
   logo: assets/imgs/icons/keynote.png
 
