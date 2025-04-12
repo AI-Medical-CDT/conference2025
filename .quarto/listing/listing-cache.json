@@ -5,7 +5,8 @@
       "listings/exec.yml",
       "listings/students.yml",
       "listings/agenda.yml",
-      "listings/gallery.yml"
+      "listings/gallery.yml",
+      "listings/panel.yml"
     ]
   }
 }

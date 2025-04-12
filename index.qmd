@@ -49,6 +49,9 @@ listing:
   - id: gallery
     template: assets/styles/gallery.ejs
     contents: listings/gallery.yml
+  - id: panel
+    template: assets/styles/panel.ejs
+    contents: listings/panel.yml
 ---
 
 <div class="button-container">
@@ -79,6 +82,11 @@ enrich the community. We hope that the event will provide an opportunity for our
 # Keynotes {#sec-keynotes}
 
 :::{#keynotes}
+:::
+
+# Industry Panel {#sec-panel}
+
+:::{#panel}
 :::
 
 # Agenda {#sec-agenda}

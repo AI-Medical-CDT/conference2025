@@ -1,0 +1,15 @@
+- name: "Rashik Parmar MBE FBCS"
+  affiliation: "Formerly with BCS and IBM"
+  image: assets/imgs/panel/rashik.jpg
+  href: https://uk.linkedin.com/in/rashikparmar
+  bio: listings/bio_rashik.html
+- name: "Dr Fouzhan Hosseini"
+  affiliation: "Intel Corporation"
+  image: assets/imgs/panel/fouzhan.jpg
+  href: https://uk.linkedin.com/in/fouzhanhosseini
+  bio: listings/bio_fouzhan.html
+- name: "Rachel Beverly-Stevenson"
+  affiliation: "OneMedical Group"
+  image: assets/imgs/panel/rachel.png
+  href: https://onemedicalgroup.co.uk/people/rachel-beverley-stevenson/
+  bio: listings/bio_rachel.html
