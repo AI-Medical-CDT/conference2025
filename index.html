@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.43">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,12 +37,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-603e8cda858f2075928f847f8923ed47.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c43a98cac10a0309c7508fc2f56e9ab3.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-f44938cbc76d644b8145c7313cc8747d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9d2cfa43c35c2991ca0b70d8219ff46a.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
@@ -204,6 +204,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-gallery'] = new List('listing-gallery', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-panel .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-affiliation','listing-image','listing-href','listing-bio',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-affiliation","listing-image","listing-href","listing-bio"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-panel'] = new List('listing-panel', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -429,13 +457,13 @@ img.grid-item:hover {
 </style>
 <div class="grid-gallery">
 <div>
-<p><a href="assets/imgs/gallery/conf2022.jpg" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-2;"><img src="assets/imgs/gallery/conf2022.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<p><a href="assets/imgs/gallery/conf2022.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-2;" data-gallery="quarto-grid-gallery"><img src="assets/imgs/gallery/conf2022.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
 </div>
 <div>
-<p><a href="assets/imgs/gallery/conf2023.jpg" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-3;"><img src="assets/imgs/gallery/conf2023.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<p><a href="assets/imgs/gallery/conf2023.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-3;" data-gallery="quarto-grid-gallery"><img src="assets/imgs/gallery/conf2023.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
 </div>
 <div>
-<p><a href="assets/imgs/gallery/conf2024.jpg" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-4;"><img src="assets/imgs/gallery/conf2024.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
+<p><a href="assets/imgs/gallery/conf2024.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-4;" data-gallery="quarto-grid-gallery"><img src="assets/imgs/gallery/conf2024.jpg" class="grid-item img-fluid" loading="lazy"></a></p>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -458,6 +486,35 @@ No matching items
         <a href="https://www.epfl.ch/labs/gr-pu/members/pearl-pu/" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/keynotes/pearl.jpg" style="max-width: 200px"></a>
         <p class="fs-4 mt-2 mb-0">Pearl Pu</p>
         <p class="mb-0">Senior Scientist and Maître d'Enseignement, École Polytechnique Fédérale de Lausanne</p>
+    </div>
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="sec-panel" class="level1">
+<h1>Industry Panel</h1>
+<div id="listing-panel" class="quarto-listing quarto-listing-container-custom">
+<div class="d-grid gap-4" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+
+    <div class="text-center">
+        <a href="https://uk.linkedin.com/in/rashikparmar" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/panel/rashik.jpg" style="max-width: 200px"></a>
+        <p class="fs-4 mt-2 mb-0" style="font-size: 150px;">Rashik Parmar MBE FBCS</p>
+        <p class="mb-0" style="font-weight: 350;"><a href="listings/bio_rashik.html" style="font-weight: bold;">:Formerly with BCS and IBM</a></p>
+    </div>
+
+    <div class="text-center">
+        <a href="https://uk.linkedin.com/in/fouzhanhosseini" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/panel/fouzhan.jpg" style="max-width: 200px"></a>
+        <p class="fs-4 mt-2 mb-0" style="font-size: 150px;">Dr Fouzhan Hosseini</p>
+        <p class="mb-0" style="font-weight: 350;"><a href="listings/bio_fouzhan.html" style="font-weight: bold;">:Intel Corporation</a></p>
+    </div>
+
+    <div class="text-center">
+        <a href="https://onemedicalgroup.co.uk/people/rachel-beverley-stevenson/" class="listing-title" target="_blank"><img class="rounded-circle img-fluid" src="assets/imgs/panel/rachel.png" style="max-width: 200px"></a>
+        <p class="fs-4 mt-2 mb-0" style="font-size: 150px;">Rachel Beverly-Stevenson</p>
+        <p class="mb-0" style="font-weight: 350;"><a href="listings/bio_rachel.html" style="font-weight: bold;">:OneMedical Group</a></p>
     </div>
 
 </div>
@@ -648,8 +705,8 @@ No matching items
 <hr style="height:1.5pt; visibility:hidden;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-83dae3a0e9051978c5fc" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-83dae3a0e9051978c5fc">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[53.805251,-1.550028],15,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank' style='font-weight:bold'>Nexus<\/a><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"closeOnClick":false,"className":"","autoClose":false}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":["calls.1.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-20c853d4ee4275b80dc6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-20c853d4ee4275b80dc6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"setView":[[53.805251,-1.550028],15,[]],"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addEasyButton","args":[{"icon":"ion-arrow-shrink","title":"Reset View","onClick":"function(btn, map){ map.setView(map._initialCenter, map._initialZoom); }","position":"topleft"}]},{"method":"addPopups","args":[53.805251,-1.550028,"<a href='https://www.google.co.uk/maps/dir//Nexus+-+University+of+Leeds,+Discovery+Way,+Leeds+LS2+3AA/@53.8052821,-1.5502785,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x48795c028b513609:0x6014fd660699c8ee!2m2!1d-1.5502785!2d53.8052821!3e0' target='_blank' style='font-weight:bold'>Nexus<\/a><br/>Discovery Way<br/>University of Leeds<br/>Leeds, LS2 3AA",null,null,{"maxWidth":300,"minWidth":50,"autoPan":true,"keepInView":false,"closeButton":false,"closeOnClick":false,"className":"","autoClose":false}]}],"limits":{"lat":[53.805251,53.805251],"lng":[-1.550028,-1.550028]}},"evals":["calls.1.args.0.onClick"],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\nfunction(el, x){\n  var map = this;\n  map.whenReady(function(){\n    map._initialCenter = map.getCenter();\n    map._initialZoom = map.getZoom();\n  });\n}).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 </div>
 </div>
 </section>
