@@ -717,12 +717,17 @@ Bubble: the box that expands below an expandable, containing a Nutshell Section
             ex.isOpen = false;
             ex.open = (mouseEvent)=>{
 
+                //if (Nutshell._nutshellsOpen >= 1){
+                Nutshell.closeAllNutshells();
+                //}
+
                 // Hi
                 ex.isOpen = true;
 
                 // Insert a bubble
                 //debugger;
-                let clickX = mouseEvent.clientX - ex.parentNode.getBoundingClientRect().x; // relative to parent, I guess???
+                let clickX = mouseEvent.clientX - ex.parentNode.getBoundingClientRect().x; // relative to parent, I guess??
+
                 bubble = Nutshell.createBubble(ex, clickX);
                 ex.parentNode.insertBefore(bubble, punctuation.nextSibling); // place the bubble AFTER PUNCTUATION
                 ex.setAttribute("mode", "open");
